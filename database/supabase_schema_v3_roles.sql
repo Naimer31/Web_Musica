@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS public.lessons (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   course_id UUID REFERENCES public.courses(id) ON DELETE CASCADE,
   teacher_id UUID REFERENCES public.profiles(id),
+  student_id UUID REFERENCES public.profiles(id),
   title TEXT NOT NULL,
   description TEXT,
   scheduled_at TIMESTAMP WITH TIME ZONE,
@@ -23,8 +24,8 @@ CREATE TABLE IF NOT EXISTS public.lessons (
 
 ALTER TABLE public.lessons ENABLE ROW LEVEL SECURITY;
 CREATE POLICY IF NOT EXISTS "Lecciones visibles autenticados" ON public.lessons FOR SELECT USING (auth.uid() IS NOT NULL);
-CREATE POLICY IF NOT EXISTS "Profesores/admins crean lecciones" ON public.lessons FOR INSERT WITH CHECK (auth.uid() = teacher_id);
-CREATE POLICY IF NOT EXISTS "Profesores/admins editan lecciones" ON public.lessons FOR UPDATE USING (auth.uid() = teacher_id);
+CREATE POLICY IF NOT EXISTS "Profesores/admins crean lecciones" ON public.lessons FOR INSERT WITH CHECK (auth.uid() = teacher_id OR auth.uid() = student_id);
+CREATE POLICY IF NOT EXISTS "Profesores/admins editan lecciones" ON public.lessons FOR UPDATE USING (auth.uid() = teacher_id OR auth.uid() = student_id);
 
 -- Tabla de progreso por lección (para % real)
 CREATE TABLE IF NOT EXISTS public.lesson_completions (

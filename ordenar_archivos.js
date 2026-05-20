@@ -10,14 +10,14 @@ if (!fs.existsSync(dbDir)) {
     fs.mkdirSync(dbDir);
 }
 
-// Archivos a mover
 const files = [
     'supabase_complete_lessons_table.sql',
     'supabase_sample_data.sql',
     'supabase_schema.sql',
     'supabase_schema_completo.sql',
     'supabase_schema_v2.sql',
-    'supabase_schema_v3_roles.sql'
+    'supabase_schema_v3_roles.sql',
+    'fix_supabase_schema.sql'
 ];
 
 let movedCount = 0;
