@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FirebaseScript from "@/components/FirebaseScript";
 
 export const metadata: Metadata = {
   title: {
@@ -36,8 +37,10 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
           <WhatsAppButton />
+          <FirebaseScript />
         </LanguageProvider>
       </body>
     </html>
   );
 }
+

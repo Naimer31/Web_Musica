@@ -145,6 +145,30 @@ export const translations = {
           level: "Intermediate",
           desc: "Develop rich, sonorous tone production and precision in bowing. Specialized tracks for both solo repertoire and orchestral play.",
           price: "S/ 1700 / Semester"
+        },
+        {
+          title: "Violin Technique Foundations",
+          level: "Beginner",
+          desc: "Learn correct posture, precise bow hold, and fundamental finger patterns. Perfect for starting your violin journey with confidence.",
+          price: "S/ 1400 / Semester"
+        },
+        {
+          title: "Advanced Orchestration & Music Composition",
+          level: "Advanced",
+          desc: "Explore instrument ranges, symphonic colors, and voicing. Write professional orchestrations and original music arrangements.",
+          price: "S/ 1900 / Semester"
+        },
+        {
+          title: "Pop & R&B Vocal Performance",
+          level: "Intermediate",
+          desc: "Develop dynamic vocal agility, contemporary riffs, phrasing, and microphone control. Suitable for modern solo vocalists.",
+          price: "S/ 1500 / Semester"
+        },
+        {
+          title: "Jazz Piano & Improvisation",
+          level: "Intermediate",
+          desc: "Uncover chord extensions, jazz scales, swing feel, and syncopated comping styles. Perfect for expanding keyboard versatility.",
+          price: "S/ 1600 / Semester"
         }
       ]
     },
@@ -404,6 +428,30 @@ export const translations = {
           level: "Intermedio",
           desc: "Desarrolla un tono sonoro y precisión en el arco. Rutas especializadas para repertorio solista y orquestal.",
           price: "S/ 1700 / Semestre"
+        },
+        {
+          title: "Fundamentos Técnicos del Violín",
+          level: "Principiante",
+          desc: "Aprende la postura correcta, sujeción precisa del arco y patrones básicos de dedos. Ideal para iniciar tu viaje de violín con confianza.",
+          price: "S/ 1400 / Semestre"
+        },
+        {
+          title: "Orquestación Avanzada y Composición de Música",
+          level: "Avanzado",
+          desc: "Explora registros instrumentales, colores sinfónicos y voicings. Escribe orquestaciones profesionales y arreglos musicales originales.",
+          price: "S/ 1900 / Semestre"
+        },
+        {
+          title: "Interpretación Vocal Pop y R&B",
+          level: "Intermedio",
+          desc: "Desarrolla agilidad vocal dinámica, melismas contemporáneos, fraseo y control del micrófono. Apto para solistas modernos.",
+          price: "S/ 1500 / Semestre"
+        },
+        {
+          title: "Piano Jazz e Improvisación",
+          level: "Intermedio",
+          desc: "Descubre extensiones de acordes, escalas de jazz, ritmo de swing y estilos de acompañamiento sincopados. Perfecto para ampliar tu versatilidad en teclado.",
+          price: "S/ 1600 / Semestre"
         }
       ]
     },
